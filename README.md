@@ -1,66 +1,45 @@
-# Telco Customer Churn MLOps
+# Telco Churn MLOps Project
 
-## Business Problem
+This project is a step-by-step MLOps tutorial using the Telco Customer Churn dataset.
 
-A telecommunications company wants to identify customers who are likely
-to stop using its services so that the retention team can intervene before
-the customers leave.
+## Project Goal
 
-## Machine-Learning Objective
+The goal is to build a complete machine learning operations workflow from raw data ingestion to model deployment planning.
 
-Build a supervised binary-classification system that predicts whether an
-individual customer will churn.
+## MLOps Workflow
 
-## Prediction Unit
-
-One customer record.
-
-## Target Variable
-
-`Churn`
-
-- `Yes`: the customer churned
-- `No`: the customer did not churn
-
-The positive class is `Yes`.
+1. Project setup and folder structure
+2. Git and environment setup
+3. Data ingestion
+4. Raw data inspection
+5. Raw EDA
+6. Data validation rules
+7. Data cleaning
+8. Cleaned data inspection
+9. Cleaned EDA
+10. Train/test split
+11. Preprocessing pipeline
+12. Baseline model
+13. Experiment tracking with MLflow
+14. Train and compare models
+15. Model evaluation
+16. Model selection and registration
+17. Save model pipeline
+18. Prediction script
+19. Testing with pytest
+20. Pipeline automation
+21. Batch prediction system
+22. FastAPI deployment
+23. Dockerisation
+24. Monitoring plan
+25. Retraining plan
+26. Final documentation and model card
 
 ## Dataset
 
-The raw dataset contains 7,043 customer records and 21 columns.
+Telco Customer Churn dataset.
 
-The untouched source file is stored locally at:
+The raw dataset is stored locally in:
 
-`data/raw/Telco-Customer-Churn.csv`
-
-## Initial Quality Observations
-
-- Every customer ID is unique.
-- There are no exact duplicate customer records.
-- `TotalCharges` is stored as text.
-- `TotalCharges` contains 11 whitespace-only values.
-- The target is imbalanced, with fewer churned customers than
-  non-churned customers.
-
-## Leakage Policy
-
-- The raw dataset will remain unchanged.
-- Basic schema validation may examine the complete raw dataset.
-- The data will be split before detailed EDA.
-- Detailed EDA will use the training dataset only.
-- Preprocessing will be fitted using the training dataset only.
-- The test dataset will remain untouched until final model evaluation.
-
-## Evaluation
-
-The project will monitor:
-
-- Recall for churned customers
-- Precision for churned customers
-- F1 score
-- ROC-AUC
-- Precision-recall AUC
-- Confusion matrix
-
-The final primary metric and prediction threshold will be selected after
-considering the business cost of missed churners and unnecessary retention
-interventions.
+```text
+data/raw/

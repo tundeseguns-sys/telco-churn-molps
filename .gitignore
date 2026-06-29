@@ -1,43 +1,41 @@
 # Python cache
 __pycache__/
-*.py[cod]
-*.egg-info/
-build/
-dist/
+*.pyc
+*.pyo
 
-# Virtual environment
+# Virtual environments
 .venv/
-.env
+venv/
+env/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Testing and linting
-.pytest_cache/
-.ruff_cache/
-.coverage
-htmlcov/
+# Environment variables
+.env
 
-# Raw dataset
-/data/raw/Telco-Customer-Churn.csv
+# Raw/interim/processed data files
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
 
-# Generated interim datasets
-/data/interim/*
-!/data/interim/.gitkeep
+# Keep folder placeholders
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
 
-# Generated processed datasets
-/data/processed/*
-!/data/processed/.gitkeep
+# Models
+models/*
+!models/.gitkeep
 
-# Generated model files
-/models/*
-!/models/.gitkeep
+# Reports outputs
+reports/figures/*
+reports/metrics/*
+!reports/figures/.gitkeep
+!reports/metrics/.gitkeep
 
-# Generated figures
-/reports/figures/*
-!/reports/figures/.gitkeep
-
-# Logs and operating-system files
-*.log
+# System files
 .DS_Store
 Thumbs.db

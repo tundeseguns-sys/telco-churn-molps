@@ -1,6 +1,5 @@
 -c requirements.txt
 
 pytest
-jupyter
 ruff
 pip-tools

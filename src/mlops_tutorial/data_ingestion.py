@@ -88,3 +88,4 @@ def run_data_ingestion() -> pd.DataFrame:
 
 if __name__ == "__main__":
     run_data_ingestion()
+

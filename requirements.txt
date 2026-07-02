@@ -208,8 +208,6 @@ python-dotenv==1.2.2
     # via mlflow-skinny
 pytz==2026.2
     # via pandas
-pywin32==312
-    # via docker
 pyyaml==6.0.3
     # via mlflow-skinny
 requests==2.34.2

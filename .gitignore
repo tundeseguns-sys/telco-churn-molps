@@ -39,3 +39,9 @@ reports/metrics/*
 # System files
 .DS_Store
 Thumbs.db
+
+# Python package/build metadata
+*.egg-info/
+
+.pytest_cache/
+.ruff_cache/
